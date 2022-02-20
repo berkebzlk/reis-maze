@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.get-out {
+  position: absolute;
+  width: 25rem;
+  height: 75%;
+  background-color: red;
+  display: none;
+}
+
+.get-out::before {
+  content: "You touched the border. GET OUT!";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+.description {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-level {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.ui-message {
+  font-size: 1.5rem;
+}
+
+.level-two {
+  display: none;
+}
+
+.next-button {
+  padding: 1rem 3rem;
+  background: rgb(24, 114, 174);
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.spooky-picture {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  display: none;
+}
+
+.spooky-picture-- {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  display: none;
+}
+
+.level-1,
+.level-2,
+.level-3,
+.level-4 {
+  height: 35rem;
+  width: 20rem;
+}
+
+.level-2 {
+  display: none;
+}
+
+.level-3 {
+  display: none;
+}
+
+.level-4 {
+  display: none;
+}
